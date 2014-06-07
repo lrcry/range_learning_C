@@ -24,8 +24,6 @@ int main(int argc, char* argv[]) {
 	int n_do_while = function_do_while(max);
 	
 	printf("while: n=%d, do while: n=%d\n", n_while, n_do_while);
-	// n_while = 0 because the condition of while is false when it executed,
-	// n_do_while = 1 because when it executed, ++n is executed at least once.
 	
 	return 0;
 }
