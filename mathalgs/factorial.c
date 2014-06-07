@@ -1,22 +1,38 @@
 #include <stdio.h>
 
-long factorial(long);
+int factorial(int);
+
+int factorial_circulation(int);
 
 int main(int argc, char* argv[]) {
-	long number = 0;
+	int number = 0;
 	printf("Give me a number: \n");
-	scanf("%ld", &number);
+	scanf("%d", &number);
 	
-	long fctr = factorial(number);
+	int fctr = factorial(number);
 
-	printf("The factorial of %ld is %ld\n", number, fctr);
+	printf("The factorial of %d is %d\n", number, fctr);
+
+	fctr = factorial_circulation(number);
+	printf("The factorial by circulation of %d is %d\n", number, fctr);
 
 	return 0;
 }
 
-long factorial(long number) {
+int factorial(int number) {
 	if (number == 0)
 		return 1;
 	else 
 		return number * factorial(number - 1);
+}
+
+int factorial_circulation(int n) {
+	int result = 1;
+	
+	while (n > 0) {
+		result *= n;
+		n--;
+	}
+
+	return result;
 }
