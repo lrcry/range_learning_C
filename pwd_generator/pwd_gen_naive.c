@@ -9,7 +9,8 @@
  * Other functions: 
  * 	1. save the generated pwd to a specific file with a random name
  * 	2. copy to clipboard
- * 	3. more..
+ * 	3. designation of a struct-password <advanced>
+ * 	4. implements an algorithm to check the strength of input passwd <advanced>
  * 
  * Think about a problem:
  * 	how to handle the inputs of users? (Never believe in users' input)
