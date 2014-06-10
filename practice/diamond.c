@@ -7,6 +7,12 @@
  */
 void print(int num, char ch) {
 	int i, j, k;
+	
+	if (num % 2 == 0) { // if num is even, error.
+		printf("Error: %d is not a valid number of points in the diamonds.\n");
+		return;
+	}
+	
 	for (i = 1; i <= num ;i += 2) {
 		for (k = 0; k < (num - i) / 2; k++)
 			printf("\t");
